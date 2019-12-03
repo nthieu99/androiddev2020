@@ -5,6 +5,7 @@
     android:id="@+id/fragment_forecast"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_forecast"
     android:orientation="vertical">
 
 
@@ -212,6 +213,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -241,8 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:text="@string/partly_cloudy"
-                android:textSize="15sp"
-                />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="match_parent"
