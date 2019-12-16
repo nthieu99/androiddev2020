@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">USTH Weather</string>
 
-    <string name="hello_blank_fragment">This is a blank fragment</string>
+    <string name="refresh_message">Refreshing...</string>
     <string name="Monday">Mon</string>
     <string name="Tuesday">Tue</string>
     <string name="Wednesday">Wed</string>
@@ -18,5 +18,6 @@
     <string name="thunderstorms">Thunderstorms</string>
     <string name="temperature">24°C - 31°C</string>
     <string name="paris">Paris</string>
+    <string name="refresh">Refresh</string>
 
 </resources>

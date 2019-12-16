@@ -9,6 +9,12 @@ import android.util.Log;
 
 import android.media.MediaPlayer;
 
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+
 import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
@@ -26,6 +32,18 @@ public class WeatherActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
         TabLayout tabLayout = findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.weather_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Toast.makeText(this, R.string.refresh_message, Toast.LENGTH_SHORT).show();
+        return true;
     }
 
     @Override
